@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a123456789.bmi_final.Main2Activity">
+    <ImageView
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:src="@drawable/ic_arrow_back_black_48dp"
+        android:layout_margin="16dp"
+        android:onClick="back"/>
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="165sp"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的身高(cm)"
+        android:background="@drawable/white_frame"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:layout_marginTop="100sp"/>
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="165sp"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的体重(Kg)"
+        android:background="@drawable/white_frame"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:layout_below="@id/height_input"
+        android:layout_marginTop="16sp"/>
+    <EditText
+        android:id="@+id/usrBMI"
+        android:layout_width="165sp"
+        android:layout_height="wrap_content"
+        android:hint="BMI"
+        android:background="@drawable/white_frame"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:layout_below="@id/weight_input"
+        android:layout_marginTop="16sp"
+        android:focusable="false"/>
+    <Button
+        android:layout_width="165sp"
+        android:layout_height="30sp"
+        android:background="@drawable/blue_btn"
+        android:text="记录"
+        android:layout_below="@id/usrBMI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"/>
+
+</RelativeLayout>

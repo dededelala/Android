@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a123456789.bmi_final.MainActivity">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="65sp"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:id="@+id/loginUser"
+        android:layout_width="280sp"
+        android:layout_height="40sp"
+        android:background="@drawable/white_frame"
+        android:layout_below="@id/loginTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="用户名"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dip"
+            android:layout_height="22sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="#EEEFFF" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/view1"
+            android:background="@null"
+            android:ems="19"
+            android:hint=" 请输入用户名"
+
+            android:padding="1dp"
+            android:textSize="12sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginPwd"
+        android:layout_width="280sp"
+        android:layout_height="40sp"
+        android:background="@drawable/white_frame"
+        android:layout_below="@id/loginUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="密码"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dip"
+            android:layout_height="22sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="#EEEFFF" />
+
+        <EditText
+            android:id="@+id/phonenumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/view2"
+            android:background="@null"
+
+            android:ems="19"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="1dp"
+            android:textSize="12sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="280sp"
+        android:layout_height="35sp"
+        android:background="@drawable/blue_btn"
+        android:text="@string/login_title"
+        android:layout_below="@+id/loginPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="login"/>
+
+</RelativeLayout>
